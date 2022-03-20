@@ -14,7 +14,7 @@ module.exports = {
     "plugin:unicorn/recommended",
     "plugin:promise/recommended",
     "plugin:@typescript-eslint/recommended",
-    "prettier",
+    'plugin:prettier/recommended',
   ],
   parser: "@typescript-eslint/parser",
   parserOptions: {
@@ -31,7 +31,7 @@ module.exports = {
       },
     },
   },
-  plugins: ["react", "unicorn", "promise", "@typescript-eslint"],
+  plugins: ["react", "unicorn", "promise", "@typescript-eslint","prettier"],
   rules: {
     "import/extensions": [
       ERROR,
@@ -43,5 +43,8 @@ module.exports = {
         js: "nerver",
       },
     ],
+    "unicorn/prefer-module":OFF,
+    "@typescript-eslint/no-var-requires":OFF,
+    'import/no-extraneous-dependencies': [ERROR, { devDependencies: true }]
   },
 };
