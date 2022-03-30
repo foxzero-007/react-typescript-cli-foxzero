@@ -45,6 +45,7 @@ module.exports = {
     ],
     "unicorn/prefer-module":OFF,
     "@typescript-eslint/no-var-requires":OFF,
-    'import/no-extraneous-dependencies': [ERROR, { devDependencies: true }]
+    'import/no-extraneous-dependencies': [ERROR, { devDependencies: true }],
+    "prettier/prettier": ["error", {"singleQuote": true, "parser": "flow"}]
   },
 };

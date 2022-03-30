@@ -1,2 +1,2 @@
-const number = 1;
-console.log(number);
+const root = document.querySelector('#root');
+root.innerHTML = 'hello, webpack!';
